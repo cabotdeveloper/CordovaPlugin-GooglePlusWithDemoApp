@@ -1,0 +1,24 @@
+.button_image{
+	text-color:"#FFFFFF";
+	background:url('../img/btn_gsignin_normal.png');
+	background-repeat: no-repeat;
+	border : none;
+    width:100%;
+    line-height: 48px;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding-left:40%;
+}
+.cart-button {
+	text-color:"#FFFFFF";
+    background : url("../img/btn_gsignin_pressed.png");
+    border : none;
+    background-repeat: no-repeat;
+    height: 48px;
+    width:100%;
+    padding: 10px;
+    line-height: 48px;
+    background-position: center center;
+    background-size: 100% 100%;
+    
+}

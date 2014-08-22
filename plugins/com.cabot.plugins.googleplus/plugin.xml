@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:rim="http://www.blackberry.com/ns/widgets"
+	id="com.cabot.plugins.googleplus"
+	version="0.0.1">
+
+<name>Google plus integration</name>
+<description>PhoneGap plugin to support a google plus communication</description>
+<author>Tessy Thomas</author>
+
+<info>
+	This plugin was written for Google Plus Login in Cordova Applications
+</info>
+
+<js-module src="www/plugins/googleConnectPlugin.js" name="GoogleConnectPlugin">
+	<clobbers target="navigator.googleConnectPlugin" />
+</js-module>
+
+<preference name="CLIENT_ID" />
+<engines>
+	<engine name="cordova" version=">=3.1.0" />
+</engines>
+<!--
+<string name="AppName">$APP_NAME</string>
+<string name="ios_header_file_src">platforms&#47;ios&#47;@strings/AppName&#47;Plugins&#47;</string>
+<string name="ios_source_file_src">platforms&#47;ios&#47;@strings/AppName&#47;Plugins&#47;</string>
+-->
+<!-- android -->
+<platform name="android">
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+             <feature name="GoogleConnectPlugin">
+       		<param name="android-package" value="com.cabot.plugins.googleplus.ConnectGoogle"/>
+	     </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		
+        </config-file>
+	<config-file target="AndroidManifest.xml" parent="/manifest">
+		<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+		<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	</config-file>
+        <!-- copy Googleplus Lib project -->
+        <source-file src="platforms/android/google-play-services_lib" target-dir="./" />
+        <!-- cordova plugin src files -->
+       <source-file src="platforms/android/src/com/cabot/plugins/googleplus/ConnectGoogle.java" target-dir="src/com/cabot/plugins/googleplus/" />
+         
+    </platform>
+    
+    <!-- ios -->
+    <platform name="ios">
+	    <config-file target="config.xml" parent="/*">
+			<feature name="GoogleConnectPlugin">
+ 				<param name="ios-package" value="GoogleConnectPlugin"/>
+			    	<param name="onload" value="true" />
+	     		</feature>
+		    <plugin name="GoogleConnectPlugin" value="GoogleConnectPlugin"/>
+	    </config-file>
+
+        <header-file src="platforms/ios/GoogleConnect/Plugins/com.cabot.plugins.googleplus/GoogleConnectPlugin.h" />
+        <source-file src="platforms/ios/GoogleConnect/Plugins/com.cabot.plugins.googleplus/GoogleConnectPlugin.m"/>
+
+        <config-file target="*-Info.plist" parent="GPlusClientID">
+            <string>$CLIENT_ID</string>
+        </config-file>
+        
+
+        <!-- Google framework -->
+        <framework src="platforms/ios/GooglePlus.framework" custom="true" />
+        <framework src="platforms/ios/GooglePlus.bundle" custom="true"/>
+        <framework src="platforms/ios/GoogleOpenSource.framework"  custom="true" />
+        
+        <!-- System frameworks -->
+        <framework src="AddressBook.framework" weak="true" />
+        <framework src="AssetsLibrary.framework" weak="true" />
+        <framework src="Foundation.framework" weak="true" />
+        <framework src="CoreLocation.framework" weak="true" />
+        <framework src="CoreMotion.framework" weak="true" />
+        <framework src="CoreGraphics.framework" weak="true" />
+        <framework src="CoreText.framework" weak="true" />
+        <framework src="MediaPlayer.framework" weak="true" />
+        <framework src="Security.framework" weak="true" />
+        <framework src="SystemConfiguration.framework" weak="true" />
+        <framework src="UIKit.framework" weak="true" />
+
+    </platform>
+</plugin>
