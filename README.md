@@ -1,5 +1,8 @@
-CordovaPlugin-GooglePlusLogin
-=============================
+
+CordovaPlugin-GooglePlusWithDemoApp
+===================================
+
+This Repository contains the Cordova plugin for Google Plus integration. Also it is a project that implemented GooglePlus plugin.
 
 This is a Cordova Plugin for Google Plus integration in iOS and Android.
 This plugin for Apache Cordova allows you to use the same Javascript code in Cordova application as you in your cross platform mobile applications. 
@@ -151,4 +154,5 @@ Success Function will return an object containing the profile information like:
 }
 
 Failure function returns an error String.
+
 
