@@ -149,7 +149,7 @@ Success Function will return an object containing the profile information like:
 
 	Email:"tester@testing.com"
 
-	Gender:"1"
+	Gender:"Male"
 
 }
 
