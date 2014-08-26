@@ -5,8 +5,8 @@
 	id="com.cabot.plugins.googleplus"
 	version="0.0.1">
 
-<name>Google plus integration</name>
-<description>PhoneGap plugin to support a google plus communication</description>
+<name>Google Plus Integration in Cordova Applications</name>
+<description>PhoneGap plugin to support a google plus communication in Cordova Applications. This plugin allows to login with google plus and get profile details of the logged in user. This plugin for Apache Cordova allows you to use the same JavaScript code for different platforms in your Cordova application.  </description>
 <author>Tessy Thomas</author>
 
 <info>
