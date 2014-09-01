@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "description": "for unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "facebook",
+    "share"
+  ],
+  "author": "Tessy Thomas",
+  "license": "MIT"
+}
