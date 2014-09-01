@@ -19,6 +19,11 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="GoogleConnectPlugin">
+        <param name="ios-package" value="GoogleConnectPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <plugin name="GoogleConnectPlugin" value="GoogleConnectPlugin" />
     <name>GoogleConnect</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -28,9 +33,4 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <feature name="GoogleConnectPlugin">
-        <param name="ios-package" value="GoogleConnectPlugin" />
-        <param name="onload" value="true" />
-    </feature>
-    <plugin name="GoogleConnectPlugin" value="GoogleConnectPlugin" />
 </widget>
