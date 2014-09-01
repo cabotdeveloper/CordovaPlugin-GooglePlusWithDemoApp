@@ -16,7 +16,7 @@
 <js-module src="www/plugins/googleConnectPlugin.js" name="GoogleConnectPlugin">
 	<clobbers target="navigator.googleConnectPlugin" />
 </js-module>
-
+<keywords>google,google plus,google plus login,login</keywords>
 <preference name="CLIENT_ID" />
 <engines>
 	<engine name="cordova" version=">=3.1.0" />
