@@ -7,7 +7,7 @@ local.properties
 .settings
 .classpath
 .project
-build.xml
+#build.xml
 ant-build*
 ant-gen*
 proguard-project.txt
