@@ -35,7 +35,7 @@ This plugin for Apache Cordova allows you to use the same Javascript code in Cor
 
       3. cordova platform add ios
 
-      4. cordova plugin add https://github.com/cabotdeveloper/CordovaPlugin-GooglePlusWithDemoApp/ --variable   CLIENT_ID="39879107009-398cp2qn3bkqtlhmd8vp712lkedmkqqq.apps.googleusercontent.com"
+      4. cordova plugin add https://github.com/cabotdeveloper/CordovaPlugin-GooglePlusWithDemoApp/ --variable   CLIENT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 The CLIENT ID should be given correctly which is created using the package <PackageName>  in Google Developer Console.  The steps are below.
 
@@ -83,7 +83,7 @@ To install the plugin in your app, execute the following (replace variables wher
 
     3. cordova platform add android
 
-    4. cordova plugin add https://github.com/cabotdeveloper/CordovaPlugin-GooglePlusWithDemoApp/ --variable   CLIENT_ID="39879107009-398cp2qn3bkqtlhmd8vp712lkedmkqqq.apps.googleusercontent.com" 
+    4. cordova plugin add https://github.com/cabotdeveloper/CordovaPlugin-GooglePlusWithDemoApp/ --variable   CLIENT_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" 
 
 The CLIENT ID should be given correctly from Google Developer Console which is created using the package <PackageName> 
 
