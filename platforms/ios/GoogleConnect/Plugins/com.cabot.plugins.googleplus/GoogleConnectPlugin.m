@@ -68,6 +68,9 @@
                  //[self performSelector:@selector(showAlert:) onThread:[NSThread mainThread] withObject:message waitUntilDone:YES];
                  UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Warning" message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                  [alert show];
+                 CDVPluginResult *pluginResult =[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString: message];
+                [self.commandDelegate sendPluginResult:pluginResult callbackId:callbackCmd.callbackId];
+                [[GPPSignIn sharedInstance] authenticate];
              }
              else
              {
